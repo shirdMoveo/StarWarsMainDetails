@@ -9,12 +9,11 @@ MVI (MVVM) architecture - each UI event return ViewState wrapped by his state (L
 
 
 ## Tools and 3rd part libraries:
-PagingData Adapter with AsyncListDiffer (animate and optimise performance for list operations)
-Pagination support
-Coroutines and Flow for background operations inside the repository pattern.
-Observing LiveData for UI changes.
-DataStore - for saving user preferences (such as filter option)
-ViewBinding - for safe and fast views reference
+* PagingData Adapter with AsyncListDiffer (animate and optimise performance for list operations)
+* Pagination support
+* Coroutines and Flow for background operations inside the repository pattern.
+* Observing LiveData for UI changes.
+* ViewBinding - for safe and fast views reference
 
 
 ## Components:
