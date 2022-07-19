@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.details.DetailsFragment">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle">
+
+        <ImageView
+            android:id="@+id/nameIcon"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/name_icon"
+            />
+
+        <TextView
+            android:id="@+id/tvNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Name: "
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="name"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/genderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLayout">
+
+            <ImageView
+                android:id="@+id/genderIcon"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/gender_icon"
+                />
+
+            <TextView
+                android:id="@+id/tvGenderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Gender: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="gender"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/birthYearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderLayout">
+
+            <ImageView
+                android:id="@+id/BirthYearIcon"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/bith_year_icon"
+                />
+
+            <TextView
+                android:id="@+id/tvBirthYearTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Birth year: "
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingStart="15dp"
+                android:paddingTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tvBirthYear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1.1.1"
+                android:textSize="15sp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/star_wars"
+        android:scaleType="centerInside"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/shareFb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_share_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/yellow_title"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
