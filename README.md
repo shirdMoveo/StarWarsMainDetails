@@ -2,13 +2,13 @@
 
  StarWras App for getting actors and characters list, and films list.
 
-##Overview:
+## Overview:
 The app developed with Kotlin on Android Studio IDE
 App based on the Jetpack libraries, navigation components and Material Design components. Also, can handle configuration changes like rotation and day/night theme.
 MVI (MVVM) architecture - each UI event return ViewState wrapped by his state (Loading, Success, Error).
 
 
-##Tools and 3rd part libraries:
+## Tools and 3rd part libraries:
 PagingData Adapter with AsyncListDiffer (animate and optimise performance for list operations)
 Pagination support
 Coroutines and Flow for background operations inside the repository pattern.
@@ -17,7 +17,7 @@ DataStore - for saving user preferences (such as filter option)
 ViewBinding - for safe and fast views reference
 
 
-##Components:
+## Components:
 * MainActivity:
 hold main lists fragments with shared ViewModel
 * ListFragment:
